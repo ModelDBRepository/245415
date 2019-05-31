@@ -1,0 +1,37 @@
+Model files from the manuscript:
+
+Augustin, H, Zylbertal, A and Partridge L, "A computational model of the escape latency in the Giant Fiber System of D. melanogaster" (preprint)
+The file gfs_param_scan_conductances.py reproduces the protocol used
+in Fig. 3 of the article by calling the module gfpn.py.
+
+Questions on how to use this model should be directed to
+asaph.zylbertal at mail.huji.ac.il
+
+Synopsis:
+
+The Giant Fiber System (GFS) is a multi-component neuronal pathway mediating rapid escape
+response in adult fruit-fly Drosophila melanogaster, usually in the face of a threatening visual
+stimulus. Two branches of the circuit promote the response by stimulating an escape jump
+followed by flight initiation. Our recent work demonstrated an age-associated decline in the
+speed of signal propagation through the circuit, likely due to the diminishing number of gap
+junctions between its components in ageing flies. In this work, we generated a realistic
+conductance-based computational model of the GFS that recapitulates our experimental
+results and identifies some of the critical anatomical and physiological components governing
+the response latency of the circuit. Overall, anatomical properties of the GFS neurons have a
+stronger impact on the transmission speed compared to the effect of changes in neuronal
+membrane conductance densities. Our model and provides testable predictions for improving
+the circuit’s performance in ageing animals by means of experimental interventions.
+
+This example protocol plots the GFS latency as a function of gap junction conductance and:
+1) Transient voltage gated sodium conductance
+2) Voltage gated potassium conductance
+3) Leak conductance
+
+Example use:
+
+Extract the archive, run nrnivmodl in the channels directory
+(linux/unix) or mknrndll (mswin or mac os x) (see
+http://senselab.med.yale.edu/ModelDB/NEURON_DwnldGuide.html
+for more help) to compile the channels, and run the file
+gfs_param_scan_conductances.py. After a while, it will plot
+the latency maps.
